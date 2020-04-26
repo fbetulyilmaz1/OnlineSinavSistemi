@@ -1,0 +1,116 @@
+﻿@model IEnumerable<OnlineSinavSistemi.Model.Data.Sinav>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.KursMerkeziId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SinavTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SinavSaati)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suresi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SoruSayisi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Sinif)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BransId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OgretmenId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KaydedenKullaniciId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Kontenjan)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OturumBittiMi)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.SilindiMi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KayitTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuncellemeTarihi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.KursMerkeziId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinavTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SinavSaati)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suresi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoruSayisi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Sinif)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brans.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ogretmen.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KaydedenKullanici.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kontenjan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OturumBittiMi)
+            </td>
+           
+            <td>
+                @Html.DisplayFor(modelItem => item.SilindiMi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KayitTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuncellemeTarihi)
+            </td>
+            <td>
+                @Html.ActionLink("Kurs Oluştur", "Ekle", "Kurs", new { id=item.Id} )
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

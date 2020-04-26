@@ -1,0 +1,205 @@
+﻿@model IEnumerable<OnlineSinavSistemi.Model.Data.Brans>
+
+@{
+    ViewData["Title"] = "Listele";
+    string ad = "Fatma Betül Yılmaz";
+    <div>@ad</div>
+}
+
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+
+        <h1 class="page-title">
+            Ders Bilgileri
+            <small>user account page</small>
+        </h1>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PROFILE SIDEBAR -->
+                <div class="profile-sidebar">
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light profile-sidebar-portlet ">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="~/assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name"> Marcus Doe </div>
+                            <div class="profile-usertitle-job"> Developer </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+                        <div class="profile-userbuttons">
+                            <button type="button" class="btn btn-circle green btn-sm">Email</button>
+                            <button type="button" class="btn btn-circle red btn-sm">Message</button>
+                        </div>
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-home"></i> Ders Adi
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="page_user_profile_1_account.html">
+                                        <i class="icon-settings"></i> Account Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_user_profile_1_help.html">
+                                        <i class="icon-info"></i> Help
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light ">
+                        <!-- STAT -->
+                        <div class="row list-separated profile-stat">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 37 </div>
+                                <div class="uppercase profile-stat-text"> Dersleri </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 51 </div>
+                                <div class="uppercase profile-stat-text"> Görevleri </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 61 </div>
+                                <div class="uppercase profile-stat-text"> Videolari </div>
+                            </div>
+                        </div>
+                        <!-- END STAT -->
+                        <div>
+                            <h4 class="profile-desc-title">Ders Hakkında Özet Bilgi</h4>
+                            <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-globe"></i>
+                                <a href="http://www.keenthemes.com">www.keenthemes.com</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.twitter.com/keenthemes/">kkeenthemes</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-facebook"></i>
+                                <a href="http://www.facebook.com/keenthemes/">keenthemes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                </div>
+                <!-- END BEGIN PROFILE SIDEBAR -->
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portlet light ">
+                                <div class="portlet-title tabbable-line">
+                                    <div class="caption caption-md">
+                                        <i class="icon-globe theme-font hide"></i>
+                                        <span class="caption-subject font-blue-madison bold uppercase">Ders Bilgileri</span>
+                                    </div>
+                                    <ul class="nav nav-tabs"></ul>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="alert alert-info">  @(TempData["Mesaj"])</div>
+                                    <div class="tab-content">
+                                        <!-- PERSONAL INFO TAB -->
+                                        <div class="tab-pane active" id="tab_1_1">
+                                            <h2>Listele</h2>
+
+                                            <p>
+                                                <a asp-action="Create">Create New</a>
+                                            </p>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.UstBransId)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.Ad)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.LogoUrl)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.Id)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.SilindiMi)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.KayitTarihi)
+                                                        </th>
+                                                        <th>
+                                                            @Html.DisplayNameFor(model => model.GuncellemeTarihi)
+                                                        </th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var item in Model)
+                                                    {
+                                                        <tr>
+                                                            <td>
+                                                              @(item.UstBransi == null ? "-": item.UstBransi.Ad )
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Ad)
+                                                            </td>
+                                                            <td>
+                                                               <img src="@item.LogoUrl" width="100px" />
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.Id)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.SilindiMi)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.KayitTarihi)
+                                                            </td>
+                                                            <td>
+                                                                @Html.DisplayFor(modelItem => item.GuncellemeTarihi)
+                                                            </td>
+                                                            <td>
+                                                                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                                                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                                                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                                            </td>
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <!-- END PERSONAL INFO TAB -->
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROFILE CONTENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->

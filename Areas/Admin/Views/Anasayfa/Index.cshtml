@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+
+
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="index.html">Sınavlar</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Sınavlar Listesi</a>
+                    @*<i class="fa fa-angle-right"></i>*@
+                </li>
+                @*<li>
+                        <span>Öğrenci Kaydi</span>
+                    </li>*@
+            </ul>
+
+        </div>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+
+                    <div class="portlet-body">
+                        <div class="table-toolbar">
+                            <div class="row">
+                                <div class="col-md-4">
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn sbold green" data-toggle="modal" data-target="#exampleModal">
+                                        Sınav Yeri
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                            <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes" />
+                                            <span></span>
+                                        </label>
+                                    </th>
+
+                                    <th> Eğitim Tarihi </th>
+                                    <th> Sınav No </th>
+                                    <th> Eğitim Türü </th>
+                                    <th> Eğitmen-ler </th>
+                                    <th> Eğitim Yeri</th>
+                                    <th> Sınav Mevcudu </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd gradeX">
+                                    <td>
+                                        <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                            <input type="checkbox" class="checkboxes" value="1" />
+                                            <span></span>
+                                        </label>
+                                    </td>
+                                    <td> shuxer </td>
+                                    <td>
+                                        <a href="mailto:shuxer@gmail.com"> shuxer@gmail.com </a>
+                                    </td>
+                                    <td class="center">Approved</td>
+                                    <td class="center"> 12 Jan 2012 </td>
+                                    <td class="center"> 12 Jan 2012 </td>
+                                    <td class="center"> 12 Jan 2012 </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+
+
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->
+#include virtual="a.html" 
+@*@RenderPage("~/Views/GenericPages/SinavYerleri/AddSinavYeriPopUp.cshtml");*@
+@*@RenderPage("~/Views/GenericPages/SinavYerleri/AddSinavYeriPopUp.cshtml");*@
+

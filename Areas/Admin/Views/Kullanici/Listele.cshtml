@@ -1,0 +1,219 @@
+﻿@model IEnumerable<OnlineSinavSistemi.Model.Data.Kullanici>
+
+@{
+    ViewData["Title"] = "Listele";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Listele</h2>
+
+
+
+
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+      
+        <h1 class="page-title">
+         Kullanici Listesi
+            <small>managed datatable samples</small>
+        </h1>
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <i class="icon-home"></i>
+                    <a href="index.html">Home</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">Tables</a>
+                    <i class="fa fa-angle-right"></i>
+                </li>
+                <li>
+                    <span>Datatables</span>
+                </li>
+            </ul>
+            <div class="page-toolbar">
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn btn-fit-height grey-salt dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="1000" data-close-others="true">
+                        Actions
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li>
+                            <a href="#">
+                                <i class="icon-bell"></i> Action
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-shield"></i> Another action
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-user"></i> Something else here
+                            </a>
+                        </li>
+                        <li class="divider"> </li>
+                        <li>
+                            <a href="#">
+                                <i class="icon-bag"></i> Separated link
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+       
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-dark">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject bold uppercase">Kullanici Listesi</span>
+                        </div>
+                        <div class="actions">
+                            <div class="btn-group btn-group-devided" data-toggle="buttons">
+                                <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                                    <input type="radio" name="options" class="toggle" id="option1">Actions
+                                </label>
+                                <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                                    <input type="radio" name="options" class="toggle" id="option2">Settings
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portlet-body">
+                        <div class="table-toolbar">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="btn-group">
+                                        <a id="#" class="btn sbold green" asp-action="~/Admin/Kullanici/Ekle">
+                                           Ekle
+                                            <i class="fa fa-plus"></i>                                         
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="btn-group pull-right">
+                                        <button class="btn green  btn-outline dropdown-toggle" data-toggle="dropdown">
+                                            Tools
+                                            <i class="fa fa-angle-down"></i>
+                                        </button>
+                                        <ul class="dropdown-menu pull-right">
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="fa fa-print"></i> Print
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="fa fa-file-pdf-o"></i> Save as PDF
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <i class="fa fa-file-excel-o"></i> Export to Excel
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-striped table-bordered table-hover table-checkable order-column" id="sample_1">
+                            
+
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                            <input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes" />
+                                            <span></span>
+                                        </label>
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Ad)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Soyad)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Tc)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.DogumTarihi)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.EMail)
+                                    </th>
+                                  
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.FotoUrl)
+                                    </th>
+                                 
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                               
+                                @foreach (var item in Model)
+                                {
+                            <tr>
+                                <td>
+                                    <label class="mt-checkbox mt-checkbox-single mt-checkbox-outline">
+                                        <input type="checkbox" class="checkboxes" value="@item.Id" />
+                                        <span></span>
+                                    </label>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Ad)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Soyad)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Tc)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DogumTarihi)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EMail)
+                                </td>
+                              
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.FotoUrl)
+                                </td>
+                             
+                                <td>
+                                    @Html.ActionLink("Edit", "Guncelle", new { kullaniciId=item.Id},new { @class="btn btn-default" }) |
+                                    @Html.ActionLink("Details", "Details", new {  kullaniciId=item.Id }) |
+                                    @Html.ActionLink("Delete", "Sil", new { kullaniciId=item.Id })
+                                    @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>*@
+                                </td>
+                            </tr>
+                                }
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- END EXAMPLE TABLE PORTLET-->
+            </div>
+        </div>
+   
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->
