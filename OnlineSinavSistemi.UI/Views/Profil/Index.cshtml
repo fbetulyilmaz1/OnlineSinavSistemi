@@ -1,0 +1,308 @@
+﻿
+@{
+    ViewData["Title"] = "PersonelEkle";
+     
+}
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+
+        <h1 class="page-title">
+            Profil Bilgilerim
+            <small>user account page</small>
+        </h1>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PROFILE SIDEBAR -->
+                <div class="profile-sidebar">
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light profile-sidebar-portlet ">
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="~/assets/pages/media/profile/profile_user.jpg" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name"> Marcus Doe </div>
+                            <div class="profile-usertitle-job"> Developer </div>
+                        </div>
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+                        <div class="profile-userbuttons">
+                            <button type="button" class="btn btn-circle green btn-sm">Email</button>
+                            <button type="button" class="btn btn-circle red btn-sm">Message</button>
+                        </div>
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="profile-usermenu">
+                            <ul class="nav">
+                                <li>
+                                    <a href="page_user_profile_1.html">
+                                        <i class="icon-home"></i> Overview
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="page_user_profile_1_account.html">
+                                        <i class="icon-settings"></i> Account Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="page_user_profile_1_help.html">
+                                        <i class="icon-info"></i> Help
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light ">
+                        <!-- STAT -->
+                        <div class="row list-separated profile-stat">
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 37 </div>
+                                <div class="uppercase profile-stat-text"> Projects </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 51 </div>
+                                <div class="uppercase profile-stat-text"> Tasks </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="uppercase profile-stat-title"> 61 </div>
+                                <div class="uppercase profile-stat-text"> Uploads </div>
+                            </div>
+                        </div>
+                        <!-- END STAT -->
+                        <div>
+                            <h4 class="profile-desc-title">About Marcus Doe</h4>
+                            <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-globe"></i>
+                                <a href="http://www.keenthemes.com">www.keenthemes.com</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.twitter.com/keenthemes/">kkeenthemes</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-facebook"></i>
+                                <a href="http://www.facebook.com/keenthemes/">keenthemes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                </div>
+                <!-- END BEGIN PROFILE SIDEBAR -->
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portlet light ">
+                                <div class="portlet-title tabbable-line">
+                                    <div class="caption caption-md">
+                                        <i class="icon-globe theme-font hide"></i>
+                                        <span class="caption-subject font-blue-madison bold uppercase">Özlük Bilgileri</span>
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_1_1" data-toggle="tab">Özlük Bilgilerim</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_2" data-toggle="tab">Fotograf Değiştir</a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_3" data-toggle="tab">Şifre Değiştir</a>
+                                        </li>
+                                        @*<li>
+                                            <a href="#tab_1_4" data-toggle="tab">Özlük Dosyasi Bilgileri</a>
+                                        </li>*@
+                                    </ul>
+                                </div>
+                                <div class="portlet-body">
+                                    <div class="tab-content">
+                                        <!-- PERSONAL INFO TAB -->
+                                        <div class="tab-pane active" id="tab_1_1">
+                                            <form role="form" action="#">
+                                                <div class="form-group">
+                                                    <label class="control-label">İsim</label>
+                                                    <input type="text" placeholder="Emrah" class="form-control" name="isim" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Soyad</label>
+                                                    <input type="text" placeholder="Doe" class="form-control" name="soyad"/>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Cep Telefonu</label>
+                                                    <input type="text" placeholder="+90 646 58 04)" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Meslek</label>
+                                                    <input type="text" placeholder="Design, Web etc." class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Firma Adi</label>
+                                                    <input type="text" placeholder="Web Developer" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Aciklama</label>
+                                                    <textarea class="form-control" rows="3" placeholder="Sınav giriş veya Ödeme Durumu hakkında açıklama!!!"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Email</label>
+                                                    <input type="text" placeholder="http://www.mywebsite.com" class="form-control" />
+                                                </div>
+                                                <div class="margiv-top-10">
+                                                    <a href="javascript:;" class="btn green"> Kaydet </a>
+                                                    <a href="javascript:;" class="btn default"> İptal </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- END PERSONAL INFO TAB -->
+                                        <!-- CHANGE AVATAR TAB -->
+                                        <div class="tab-pane" id="tab_1_2">
+                                            <p>
+                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                                eiusmod.
+                                            </p>
+                                            <form action="#" role="form">
+                                                <div class="form-group">
+                                                    <div class="fileinput fileinput-new" data-provides="fileinput">
+                                                        <div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+                                                            <img src="http://www.placehold.it/200x150/EFEFEF/AAAAAA&amp;text=no+image" alt="" />
+                                                        </div>
+                                                        <div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"> </div>
+                                                        <div>
+                                                            <span class="btn default btn-file">
+                                                                <span class="fileinput-new"> Fotograf Seç </span>
+                                                                <span class="fileinput-exists"> Değiştir </span>
+                                                                <input type="file" name="...">
+                                                            </span>
+                                                            <a href="javascript:;" class="btn default fileinput-exists" data-dismiss="fileinput"> Sil </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="clearfix margin-top-10">
+                                                        <span class="label label-danger">NOTE! </span>
+                                                        <span>Attached image thumbnail is supported in Latest Firefox, Chrome, Opera, Safari and Internet Explorer 10 only </span>
+                                                    </div>
+                                                </div>
+                                                <div class="margin-top-10">
+                                                    <a href="javascript:;" class="btn green"> Kaydet </a>
+                                                    <a href="javascript:;" class="btn default"> İptal </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- END CHANGE AVATAR TAB -->
+                                        <!-- CHANGE PASSWORD TAB -->
+                                        <div class="tab-pane" id="tab_1_3">
+                                            <form action="#">
+                                                <div class="form-group">
+                                                    <label class="control-label">Şifre Değiştir</label>
+                                                    <input type="password" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Yeni Şifre</label>
+                                                    <input type="password" class="form-control" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="control-label">Yeni Şifre Tekrar Giriniz</label>
+                                                    <input type="password" class="form-control" />
+                                                </div>
+                                                <div class="margin-top-10">
+                                                    <a href="javascript:;" class="btn green"> Şifremi Değiştir </a>
+                                                    <a href="javascript:;" class="btn default"> İptal </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- END CHANGE PASSWORD TAB -->
+                                        @*<!-- PRIVACY SETTINGS TAB -->
+                                        <div class="tab-pane" id="tab_1_4">
+                                            <form action="#">
+                                                <table class="table table-light table-hover">
+                                                    <tr>
+                                                        <td> Sabıka Kaydı </td>
+                                                        <td>
+                                                            <div class="mt-radio-inline">
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios1" value="option1" /> Yes
+                                                                    <span></span>
+                                                                </label>
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios1" value="option2" checked /> No
+                                                                    <span></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Sağlık Raporu</td>
+                                                        <td>
+                                                            <div class="mt-radio-inline">
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios11" value="option1" /> Yes
+                                                                    <span></span>
+                                                                </label>
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios11" value="option2" checked /> No
+                                                                    <span></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Sözleşme </td>
+                                                        <td>
+                                                            <div class="mt-radio-inline">
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios21" value="option1" /> Yes
+                                                                    <span></span>
+                                                                </label>
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios21" value="option2" checked /> No
+                                                                    <span></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td> Resim </td>
+                                                        <td>
+                                                            <div class="mt-radio-inline">
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios31" value="option1" /> Yes
+                                                                    <span></span>
+                                                                </label>
+                                                                <label class="mt-radio">
+                                                                    <input type="radio" name="optionsRadios31" value="option2" checked /> No
+                                                                    <span></span>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <!--end profile-settings-->
+                                                <div class="margin-top-10">
+                                                    <a href="javascript:;" class="btn red"> Kaydet </a>
+                                                    <a href="javascript:;" class="btn default"> İptal </a>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <!-- END PRIVACY SETTINGS TAB -->*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROFILE CONTENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->

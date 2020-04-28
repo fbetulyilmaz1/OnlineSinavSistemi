@@ -1,0 +1,102 @@
+﻿@model IEnumerable<OnlineSinavSistemi.Model.Data.Soru>
+
+@{
+    ViewData["Title"] = "Listele";
+      Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<h2>Listele</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    <button id="btnyenile" onclick="ApidenYenile()"  class="btn btn-info" >Yenile</button>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.SoruMetni)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cevap)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ZorlukSeviyesi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BransId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aciklama)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KullaniciId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OnaylandiMi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SilindiMi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.KayitTarihi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuncellemeTarihi)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoruMetni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cevap)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZorlukSeviyesi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BransId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Aciklama)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KullaniciId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OnaylandiMi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SilindiMi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KayitTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuncellemeTarihi)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<script>
+    function ApidenYenile() {
+
+        $.get("http://localhost:51407/api/soru", function (data) {
+            console.log(data);
+         alert("yeni veirler çekildi. Consolea bakabilirsiniz.");
+});
+    }
+</script>

@@ -1,0 +1,607 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+     
+}
+
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <!-- BEGIN THEME PANEL -->
+        <div class="theme-panel">
+            <div class="toggler tooltips" data-container="body" data-placement="left" data-html="true" data-original-title="Click to open advance theme customizer panel">
+                <i class="icon-settings"></i>
+            </div>
+            <div class="toggler-close">
+                <i class="icon-close"></i>
+            </div>
+            <div class="theme-options">
+                <div class="theme-option theme-colors clearfix">
+                    <span> THEME COLOR </span>
+                    <ul>
+                        <li class="color-default current tooltips" data-style="default" data-container="body" data-original-title="Default"> </li>
+                        <li class="color-grey tooltips" data-style="grey" data-container="body" data-original-title="Grey"> </li>
+                        <li class="color-blue tooltips" data-style="blue" data-container="body" data-original-title="Blue"> </li>
+                        <li class="color-dark tooltips" data-style="dark" data-container="body" data-original-title="Dark"> </li>
+                        <li class="color-light tooltips" data-style="light" data-container="body" data-original-title="Light"> </li>
+                    </ul>
+                </div>
+                <div class="theme-option">
+                    <span> Theme Style </span>
+                    <select class="layout-style-option form-control input-small">
+                        <option value="square" selected="selected">Square corners</option>
+                        <option value="rounded">Rounded corners</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Layout </span>
+                    <select class="layout-option form-control input-small">
+                        <option value="fluid" selected="selected">Fluid</option>
+                        <option value="boxed">Boxed</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Header </span>
+                    <select class="page-header-option form-control input-small">
+                        <option value="fixed" selected="selected">Fixed</option>
+                        <option value="default">Default</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Top Dropdown</span>
+                    <select class="page-header-top-dropdown-style-option form-control input-small">
+                        <option value="light" selected="selected">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Sidebar Mode</span>
+                    <select class="sidebar-option form-control input-small">
+                        <option value="fixed">Fixed</option>
+                        <option value="default" selected="selected">Default</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Sidebar Style</span>
+                    <select class="sidebar-style-option form-control input-small">
+                        <option value="default" selected="selected">Default</option>
+                        <option value="compact">Compact</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Sidebar Menu </span>
+                    <select class="sidebar-menu-option form-control input-small">
+                        <option value="accordion" selected="selected">Accordion</option>
+                        <option value="hover">Hover</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Sidebar Position </span>
+                    <select class="sidebar-pos-option form-control input-small">
+                        <option value="left" selected="selected">Left</option>
+                        <option value="right">Right</option>
+                    </select>
+                </div>
+                <div class="theme-option">
+                    <span> Footer </span>
+                    <select class="page-footer-option form-control input-small">
+                        <option value="fixed">Fixed</option>
+                        <option value="default" selected="selected">Default</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- END THEME PANEL -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="note note-success">
+
+                    <h1 class="page-title">
+                        Kurs Adi
+                        <small></small>
+                    </h1>
+                    <p>
+                        Begeni yıldızları
+                        <a href="http://silviomoreto.github.io/bootstrap-select/"
+                           target="_blank">the official documentation</a>.
+                        <span>İlerleme Durumu</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- BEGIN PROFILE SIDEBAR -->
+                <div class="profile-sidebar">
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light profile-sidebar-portlet ">
+                        <!-- SIDEBAR USERPIC -->
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+
+                        <div class="col-md-12 ">
+                            <ul class="list-unstyled  nav-link nav-toggle">
+                                <li>
+                                    <i class="icon-clock"></i>  <span class="title">Ders Süresi</span>
+                                    <i class="icon-calendar"></i> <span class="title">Eğitim Baş.Tarihi</span>
+
+                                </li>
+                                <li>
+                                    <i class="icon-user"></i><span class="title">Eğitmen :</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-graduation-cap"></i>
+                                    <span class="title">Mak. Öğrenci :</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-check-square-o"></i>
+                                    <span class="title">Katılan :</span>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- END SIDEBAR USER TITLE -->
+                        <!-- SIDEBAR BUTTONS -->
+
+                        <div class="profile-userbuttons">
+                            <button type="button" class="btn btn-circle green btn-sm">Kursu Başlat</button>
+                            @*<button type="button" class="btn btn-circle red btn-sm">Message</button>*@
+                        </div>
+                        <hr />
+                        <!-- END SIDEBAR BUTTONS -->
+                        <!-- SIDEBAR MENU -->
+                        <div class="portlet light">
+                            <div>
+                                <h4 class="profile-desc-title">About Marcus Doe</h4>
+                                <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-globe"></i>
+                                    <a href="http://www.keenthemes.com">www.keenthemes.com</a>
+                                </div>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-twitter"></i>
+                                    <a href="http://www.twitter.com/keenthemes/">kkeenthemes</a>
+                                </div>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <a href="http://www.facebook.com/keenthemes/">keenthemes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END MENU -->
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                    <!-- PORTLET MAIN -->
+                    <div class="portlet light ">
+
+                        <div>
+                            <h4 class="profile-desc-title">Diğer Kurslar</h4>
+                            <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore. </span>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-graduation-cap"></i>
+                                <a href="http://www.keenthemes.com">www.keenthemes.com</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-graduation-cap"></i>
+                                <a href="http://www.twitter.com/keenthemes/">kkeenthemes</a>
+                            </div>
+                            <div class="margin-top-20 profile-desc-link">
+                                <i class="fa fa-graduation-cap"></i>
+                                <a href="http://www.facebook.com/keenthemes/">keenthemes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END PORTLET MAIN -->
+                </div>
+                <!-- END BEGIN PROFILE SIDEBAR -->
+                <!-- BEGIN PROFILE CONTENT -->
+                <div class="profile-content">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-12">
+                                <br />
+                                <div class="col-md-12">
+                                    <iframe src="http://player.vimeo.com/video/22439234" style="width:100%; height:500px;border:0" allowfullscreen> </iframe>
+                                </div>
+                            </div>
+                            <!-- BEGIN PORTLET -->
+                            <div class="portlet light ">
+                                <div class="portlet-title tabbable-line">
+                                    <div class="caption caption-md">
+                                        <i class="icon-globe theme-font hide"></i>
+                                        <span class="caption-subject font-blue-madison bold uppercase">Arama</span>
+                                    </div>
+                                    <ul class="nav nav-tabs">
+                                        <li class="active">
+                                            <a href="#tab_1_1" data-toggle="tab"> Genel Bakış </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_2" data-toggle="tab"> Soru & Cevap </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_3" data-toggle="tab"> Duyurular </a>
+                                        </li>
+                                        <li>
+                                            <a href="#tab_1_4" data-toggle="tab"> Ders İçeriği </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="portlet-body">
+                                    <!--BEGIN TABS-->
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="tab_1_1">
+                                            <div class="scroller" style="height: 100%;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                                                <div class="col-lg-12">
+                                                    <div class="portlet light about-text">
+                                                        <h4>
+                                                            <i class="fa fa-check icon-info"></i>  <span class="caption-subject font-red-intense bold uppercase">Ders Hakkında Genel Bilgi</span>
+                                                        </h4>
+                                                        <p class="margin-top-20">
+                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+                                                            lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto
+                                                            odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                                        </p>
+                                                        <div class="row">
+                                                            <div class="col-xs-6">
+                                                                <ul class="list-unstyled margin-top-10 margin-bottom-10">
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Nam liber tempor cum soluta
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <ul class="list-unstyled margin-top-10 margin-bottom-10">
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Nam liber tempor cum soluta
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Lorem ipsum dolor sit amet
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                    <li>
+                                                                        <i class="fa fa-check"></i> Mirum est notare quam
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="about-quote">
+                                                            <h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh</h3>
+                                                            <p class="about-author">Tom Hardy, 2015</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_1_2">
+                                            <div class="scroller" style="height: 337px;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                                                <ul class="feeds">
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New order received </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> 10 mins </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <div class="col1">
+                                                            <div class="cont">
+                                                                <div class="cont-col1">
+                                                                    <div class="label label-sm label-danger">
+                                                                        <i class="fa fa-bolt"></i>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="cont-col2">
+                                                                    <div class="desc">
+                                                                        Order #24DOP4 has been rejected.
+                                                                        <span class="label label-sm label-danger ">
+                                                                            Take action
+                                                                            <i class="fa fa-share"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col2">
+                                                            <div class="date"> 24 mins </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:;">
+                                                            <div class="col1">
+                                                                <div class="cont">
+                                                                    <div class="cont-col1">
+                                                                        <div class="label label-sm label-success">
+                                                                            <i class="fa fa-bell-o"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="cont-col2">
+                                                                        <div class="desc"> New user registered </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col2">
+                                                                <div class="date"> Just now </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="tab_1_4">
+                                            <div class="scroller" style="height: 100%;" data-always-visible="1" data-rail-visible1="0" data-handle-color="#D7DCE2">
+                                                <!-- BEGIN ACCORDION PORTLET-->
+                                                <div class="portlet box green">
+                                                    <div class="portlet-title">
+                                                        <div class="caption">
+                                                            <i class="fa fa-gift"></i>Ders Adi
+                                                        </div>
+                                                        <div class="tools">
+                                                            <a href="javascript:;" class="collapse"> </a>
+                                                            @*<a href="#portlet-config" data-toggle="modal" class="config"> </a>
+                                                                <a href="javascript:;" class="reload"> </a>
+                                                                <a href="javascript:;" class="remove"> </a>*@
+                                                        </div>
+                                                    </div>
+                                                    <div class="portlet-body">
+                                                        <div class="panel-group accordion" id="accordion1">
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_1"> Konu Adi #1 </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapse_1" class="panel-collapse in">
+                                                                    <div class="panel-body">
+                                                                        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_2"> Konu Adi  #2 </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapse_2" class="panel-collapse collapse">
+                                                                    <div class="panel-body" style="height:200px; overflow-y:auto;">
+                                                                        <p> 111111Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                        </p>
+                                                                        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            <a class="btn blue" href="ui_tabs_accordions_navs.html#collapse_2" target="_blank"> Activate this section via URL </a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_3"> Konu Adi  #3 </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapse_3" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <p>
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                            Brunch 3 wolf moon tempor.
+                                                                        </p>
+                                                                        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            <a class="btn green" href="ui_tabs_accordions_navs.html#collapse_3" target="_blank"> Activate this section via URL </a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="panel panel-default">
+                                                                <div class="panel-heading">
+                                                                    <h4 class="panel-title">
+                                                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_4"> Konu Adi  #4 </a>
+                                                                    </h4>
+                                                                </div>
+                                                                <div id="collapse_4" class="panel-collapse collapse">
+                                                                    <div class="panel-body">
+                                                                        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                                                            Brunch 3 wolf moon tempor.
+                                                                        </p>
+                                                                        <p> Duis autem vel eum iriure dolor in hendrerit in vulputate. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut. </p>
+                                                                        <p>
+                                                                            <a class="btn red" href="ui_tabs_accordions_navs.html#collapse_4" target="_blank"> Activate this section via URL </a>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- END ACCORDION PORTLET-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--END TABS-->
+                                </div>
+                            </div>
+                            <!-- END PORTLET -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END PROFILE CONTENT -->
+            </div>
+        </div>
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+

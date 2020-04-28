@@ -1,0 +1,86 @@
+﻿@model IEnumerable<OnlineSinavSistemi.Model.Data.Kurs>
+
+@{
+    ViewData["Title"] = "Listele";
+}
+
+                      <div class="container">
+                          <h2>Listele</h2>
+
+                          <p>
+                              <a asp-action="Create">Create New</a>
+                          </p>
+                          <table class="table">
+                              <thead>
+                                  <tr>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.BaslamaTarihi)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.BitisTarihi)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.BittiMi)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.SinavId)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.HaftalikCalisma)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.Id)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.SilindiMi)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.KayitTarihi)
+                                      </th>
+                                      <th>
+                                          @Html.DisplayNameFor(model => model.GuncellemeTarihi)
+                                      </th>
+                                      <th></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  @foreach (var item in Model)
+                                  {
+                                      <tr>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.BaslamaTarihi)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.BitisTarihi)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.BittiMi)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.SinavId)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.HaftalikCalisma)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.Id)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.SilindiMi)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.KayitTarihi)
+                                          </td>
+                                          <td>
+                                              @Html.DisplayFor(modelItem => item.GuncellemeTarihi)
+                                          </td>
+                                          <td>
+                                              @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                                              @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                                              @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                                          </td>
+                                      </tr>
+                                  }
+                              </tbody>
+                          </table>
+                      </div>

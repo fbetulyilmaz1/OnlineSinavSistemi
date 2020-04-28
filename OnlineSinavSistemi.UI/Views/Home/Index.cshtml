@@ -1,0 +1,34 @@
+﻿@using OnlineSinavSistemi.Model
+@using OnlineSinavSistemi.UI.Models
+
+@*@Html.PartialAsync("BransListesiPartial", ViewBag.KursListesi  as KursBransViewModel)*@
+@await  Component.InvokeAsync("BransListesi")
+
+<div class="card border-info card w-75 ">
+    <div class="card-header font-weight-bold text-center">
+        <h4>Sınavlarım</h4>
+    </div>
+</div>
+
+<div class="card border-info card w-75 ">
+    <div class="card-body">
+        <h5 class="card-title">Web Tasarım</h5>
+        <p class="card-text">
+            <span class="mr-3">Başlama Tarihi: 22.03.2018</span>
+            <span class="mr-3"> Başlama Saati: 09:00</span>
+            <span class="mr-3"> Süre:40 Dakika</span>
+            <a href="soru.html" class="btn btn-info float-right">Sınava Başla</a>
+        </p>
+    </div>
+</div>
+<div class="card border-info w-75">
+    <div class="card-body">
+        <h5 class="card-title">Javascript</h5>
+        <p class="card-text">
+            <span class="mr-3">Başlama Tarihi: 22.03.2018 </span>
+            <span class="mr-3">Başlama Saati: 09:00</span>
+            <span class="mr-3"> Süre:40 Dakika</span>
+            <a href="#" class="btn btn-info float-right">Sınava Başla</a>
+        </p>
+    </div>
+</div>

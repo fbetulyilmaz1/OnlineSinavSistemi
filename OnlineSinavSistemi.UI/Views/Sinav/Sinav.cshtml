@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewData["Title"] = "Sinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+        <!-- BEGIN PAGE HEADER-->
+        <h1 class="page-title">
+            Soru Sayisi
+            <small>bootstrap inputs, input groups, custom checkboxes and radio controls and more</small>
+        </h1>
+        <!-- END PAGE HEADER-->
+        <div class="row">
+            <div class="col-md-8 ">
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption font-red-sunglo">
+                            <i class="icon-settings font-red-sunglo"></i>
+                            <span class="caption-subject bold uppercase"> Ders Adi / Konu Adi</span>
+                        </div>
+
+                    </div>
+                    <div class="portlet-body form">
+                        <form role="form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <label>Seçenekler</label>
+                                    <div class="mt-radio-list">
+                                        <label class="mt-radio mt-radio-outline">
+                                            Radio 1
+                                            <input type="radio" value="1" name="test" />
+                                            <span></span>
+                                        </label>
+                                        <label class="mt-radio mt-radio-outline">
+                                            Radio 2
+                                            <input type="radio" value="1" name="test" />
+                                            <span></span>
+                                        </label>
+                                        <label class="mt-radio mt-radio-outline">
+                                            Radio 3
+                                            <input type="radio" value="1" name="test" />
+                                            <span></span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn blue">Bitir</button>
+                                <button type="button" class="btn default">İleri</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END SAMPLE FORM PORTLET-->
+
+            </div>
+            <div class="col-md-4 ">
+                <!-- BEGIN SAMPLE FORM PORTLET-->
+                <div class="portlet light ">
+                    <div class="portlet-title">
+                        <div class="caption">
+                            <i class="icon-settings font-dark"></i>
+                            <span class="caption-subject font-dark sbold uppercase">Saat ve Soru Listesi</span>
+                        </div>
+
+                    </div>
+                    <div class="portlet-body form">
+                        <form class="form-horizontal" role="form">
+                            <div class="form-body">
+                                <div class="form-group">
+                                    <div class="col-md-12">
+                                        <button type="submit" class="btn blue">1</button>
+                                        <button type="submit" class="btn blue">2</button>
+                                        <button type="button" class="btn default">3</button>
+                                        <button type="submit" class="btn blue">4</button>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn blue"></button><span>Yanıtlanan</span>
+                                    <button type="button" class="btn default"></button><span>Boş</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END SAMPLE FORM PORTLET-->
+
+            </div>
+        </div>
+
+    </div>
+    <!-- END CONTENT BODY -->
+</div>
+<!-- END CONTENT -->

@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İsmek Online Sınav Sistemi</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    </environment>
+    @*<environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" />
+    </environment>*@
+    <!-- Bootstrap core CSS -->
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/tmp/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/tmp/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/tmp/css/blog-home.css">
+    <!--===============================================================================================-->
+    <style>
+  body {
+    padding-top: 54px;
+  }
+
+  @@media (min-width: 992px) {
+    body {
+      padding-top: 56px;
+    }
+  }
+    </style>
+
+</head>
+<body style="background: url('/tmp/images/arkaplan8.png') !important;">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-color fixed-top">
+        <div class="container-fluid">
+            <div class="col-md-10 col-sm-4">
+                <a class="navbar-brand" style="float: left !important;" href="index.html">İsmek Online Sınav Sistemi</a>
+            </div>
+            <div class="col-md-2 col-sm-4">
+                <div class="dropdown show justify-content-end">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropmenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style=" background-color: white !important; border-color: #5bc0de !important; color:#5bc0de;">
+                     @await  Component.InvokeAsync("GetLoginName")
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/Kullanici/Logout"><i class="fa fa-fw fa-sign-out"></i> Çıkış</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-2"></div>
+            <div class="col-md-10">
+                <partial name="_CookieConsentPartial" />
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - OnlineSinavUI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o">
+        </script>
+    </environment>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="/tmp/vendor/jquery/jquery.min.js"></script>
+    <script src="/tmp/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/tmp/vendor/bootstrap/js/popper.js"></script>
+    <script src="/tmp/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/tmp/vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="/tmp/vendor/tilt/tilt.jquery.min.js"></script>
+    <script src="/tmp/js/main.js"></script>
+    <script>
+        $('.js-tilt').tilt({
+            scale: 1.1
+        })
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
